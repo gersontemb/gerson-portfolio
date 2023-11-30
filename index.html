@@ -1,302 +1,523 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<!--
+	Cosmix by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/images/favicon.svg" />
-    <script src="https://kit.fontawesome.com/ef2c46f17f.js" crossorigin="anonymous"></script>
-    <title>Gerson TEMBE</title>
-
-    <script type="text/javascript">
-        window.onload = function() {
-            document.querySelector(".menu_mobile").addEventListener("click", function(){
-                if(document.querySelector(".menu nav ul").style.display == "flex") {
-                    document.querySelector(".menu nav ul").style.display = "none";
-                } else {
-                    document.querySelector(".menu nav ul").style.display = "flex";
-                }
-            });
-        };
-    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Gerson | Webfolio</title>
+<!--Bootstrap-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--Stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Responsive-->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<!--Animation-->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--Prettyphoto-->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<!--Font-Awesome-->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<!--Owl-Slider-->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  [endif]-->
 </head>
-<body>
-    <header id="header">
-        <div class="container">
-            <div class="logo"><img src="./assets/images/logo.png" alt=""></div>
-            <div class="menu">
-                <nav>
-                    <div class="menu_mobile">
-                        <div class="mm_line"></div>
-                        <div class="mm_line"></div>
-                        <div class="mm_line"></div>
-                    </div>
-                    <ul>
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#sobre-mim">Sobre</a></li>
-                        <li><a href="#conhecimentos">Conhecimentos</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="mailto:davidribeiro086@gmail.com" class="menu-buttom">Contato</a></li>
-                        <li><a href="https://github.com/DavidAugustoo" target="_blank"><i class="fa fa-github"aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/davidaugustoo/" target="_blank"><i class="fa fa-linkedin-square"aria-hidden="true"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+<!--Preloader-->
+<div id="preloader">
+  <div id="pre-status">
+    <div class="preload-placeholder"></div>
+  </div>
+</div>
+<!--Navigation-->
+<header id="menu">
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#menu"><img src="images/Logo/01.png" alt=""></a> </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a class="scroll" href="#menu">Home</a></li>
+            <li><a class="scroll" href="#about">Sobre</a></li>
+            <li><a class="scroll" href="#service">Serviço</a></li>
+            <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="scroll" href="#pricing">Video</a></li>
+            <li><a class="scroll" href="#blog">Blog</a></li>
+            <li><a class="scroll" href="#contact">Contacto</a></li>
+          </ul>
         </div>
-    </header>
-
-    <main>
-        <section id="banner">
-            <div class="container">
-                <div class="banner">
-                    <div class="banner-esquerda">
-                        <p>Olá Mundo! <span>&#128075</span> Meu nome é Gerson Tembe</p>
-                        <h1>Gerson tembe</h1>
-                        <h2>Desenvolvedor</h2>
-                        <p>Programador Full Stack com foco no ecossistema do JavaScript.</p>
-                        <a href="#sobre-mim" class="buttom">Saiba mais</a>
-                    </div>
-                    <div class="banner-direita">
-                        <img src="./assets/images/avatar.png" alt="">
-                    </div>
-                </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+  </div>
+</header>
+<!--Slider-Start-->
+<section id="slider">
+  <div id="home-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active" style="background-image:url(images/Slider/01.jpg)">
+        <div class="carousel-caption container">
+          <div class="row">
+            <div class="col-md-7 col-sm-12 col-xs-12">
+              <h1>Gerson Tembe</h1>
+              <h2>Técnico Informático</h2>
+              <p>Webfolio – Tecnologia Multimídia</p>
             </div>
-            <div class="icone-rolagem">
-               <img src="./assets/images/mouse.png" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+  <!--/#home-carousel-->
+</section>
+<!--About-Section-Start-->
+<section id="about">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2>SOBRE - <span>ME</span></h2>
+        <div class="line"></div>
+        <p><span><strong>M</strong></span>eu nome é Gerson Tembe, natural de Gaza, cidede de Xai-Xai, jovem sonhador e objectivo no que diz respeito ao profissionalismo.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 ab-sec">
+        <div class="col-md-6">
+          <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms"><span>C</span>riativo e dinâmico</h3>
+          <p><span><strong></strong></span>Técnico em Informática e atualmente cursando em Desenvolvimento de sistemas na Universidade Save. Meu foco é o desenvolvimento web com HTML, CSS, JavaScript, PHP e Java. Além da aplicação de metodologias ágeis.
+
+            Estou sempre em constante aprendizado, adoro me aventurar em assuntos variados. Sinta-se livre para me acompanhar e entrar em contato comigo!. </p>
+        </div>
+        <div class="col-md-6 ab-sec-img wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><img src="images/Aboutus/01.jpg" alt=""> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--About-Sec-2-Start-->
+<div class="bg-sec">
+  <div class="container">
+    <div class="col-md-10 col-sm-10 col-xs-8">
+      <h3>CV Personalizado</h3>
+      <p>Saiba mais sobre me através do meu corículo vitae personalizado.</p>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-4"> <a class="btn-down" href="#">Download</a> </div>
+  </div>
+</div>
+<!--Service-Section-Start-->
+<section id="service">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2>SERVI<span>ÇOS</span></h2>
+        <div class="line"></div>
+        <p><span><strong>A</strong></span>presento abaixo uma variedade de serviços por me realizados, apreciei e solicite o serviço desejado.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="features-sec">
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="media service-box">
+            <div class="pull-left"> <i class="fa fa-line-chart"></i> </div>
+            <div class="media-body">
+              <h5 class="media-heading">Criação de Sites</h5>
+              <p>Criação de páginas da web que podem ser acessadas e visualizadas por meio da Internet.</p>
             </div>
-        </section>
-
-        <section id="sobre-mim">
-            <div class="container">
-                <div class="sobre-mim">
-                    <div class="sobre-mim-esquerda" >
-                        <img  style="width: 70%;" src="./assets/images/david.jpeg" alt="">   
-                    </div>
-                    
-                    <div class="sobre-mim-direita">
-                        <div class="titulo">
-                            <p>Quem sou eu</p>
-                            <h1>Sobre mim</h1>
-                        </div>
-                        <p>Formado técnico em Informática e atualmente cursando um tecnólogo em Análise e Desenvolvimento de Sistemas. Meu foco é o desenvolvimento web com HTML, CSS, JavaScript, React e Node.
-                             Além da aplicação de metodologias ágeis, como SCRUM.</br>
-                        </br>Estou sempre em constante aprendizado, adoro me aventurar em assuntos desconhecidos e variados. Sinta-se livre para me acompanhar e entrar em contato comigo! 🚀</p>
-                        <a href="https://drive.google.com/file/d/1eP9i32JtmFEqVS8OwmRRUf1aFlQwApeh/view?usp=sharing" target="_blank" class="buttom">Download CV</a></li>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+          <div class="media service-box">
+            <div class="pull-left"> <i class="fa fa-cubes"></i> </div>
+            <div class="media-body">
+              <h5 class="media-heading">Design</h5>
+              <p>Projeção de interface de um produto ou serviço, incluindo sua aparência, layout, elementos visuais e interações.</p>
             </div>
-        </section>
-
-        <section id="conhecimentos">
-            <div class="container">
-                <div class="conhecimentos">
-                    <div class="titulo">
-                        <p>O que estou estudando</p>
-                        <h1>Conhecimentos</h1>
-                    </div>
-                    <div class="conhecimentos-cards">
-                        <div class="card">
-                            <div class="card-area">
-                                <img src="assets/images/html_icon.png">
-                            <h2>HTML</h2>
-                            <p>HTMl é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.</p>
-                            </div>            
-                        </div>
-                        <div class="card">
-                            <div class="card-area">
-                                <img src="assets/images/css_icon.png">
-                            <h2>CSS</h2>
-                            <p>O CSS é uma linguagem de folhas de estilos que é utilizada para definir como os documentos escritos na linguagem de marcação HTML.</p>
-                            </div>   
-                        </div>
-                        <div class="card">
-                            <div class="card-area">
-                                <img src="assets/images/js_icon.png">
-                            <h2>Javascript</h2>
-                            <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
-                            </div>   
-                        </div>
-                        <div class="card">
-                            <div class="card-area">
-                                <img src="assets/images/typescript_icon.png">
-                            <h2>Typescript</h2>
-                            <p>TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.</p>
-                            </div>   
-                        </div>
-
-                        <div class="card">
-                            <div class="card-area">
-                                <img src="assets/images/node_icon.png">
-                            <h2>Node.js</h2>
-                            <p>Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.</p>
-                            </div>   
-                        </div>
-
-                        <div class="card">
-                            <div class="card-area">
-                                <img src="assets/images/react_icon.png">
-                            <h2>React.js</h2>
-                            <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook.</p>
-                            </div>   
-                        </div> 
-
-                        <div>
-                            <br> <br>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/d2gnGkncQbU" frameborder="0" allowfullscreen></iframe>
-                             <br> <p>OBS Studio pra gravar & CAPCUT para editar</p>
-                        </div> 
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+          <div class="media service-box">
+            <div class="pull-left"> <i class="fa fa-pie-chart"></i> </div>
+            <div class="media-body">
+              <h5 class="media-heading">Desenvolvimento de Sistemas</h5>
+              <p>Criação de sistemas de software, que são programas de computador que automatizam tarefas e ajudam as pessoas a realizar seu trabalho</p>
             </div>
-        </section>  
-
-        <section id="projetos">
-            <div class="container">
-                <div class="projetos">
-                    <div class="titulo">
-                        <p>Meus projetos</p>
-                        <h1>Projetos</h1>
-                    </div>
-                    <div class="projetos-cards">
-                        <div class="projetos-card">
-                            <img src="./assets/images/infografico.png" alt="">
-                            <div class="projeto-card-desc">
-                                <div class="projeto-card-desc-esquerda">
-                                    <h2>Infografico</h2>
-                                     
-                                </div>
-                                <div class="projeto-card-desc-direita">
-                                    <p>Usei a ferramenta Canva para para fazer o infografico.</p>
-                                    <div class="projeto-card-desc-direita-icons">
-                                        <a href="https://www.canva.com/design/DAFvEtngtII/pRjw4BzpXLNWyagtjLqy7w/edit?utm_content=DAFvEtngtII&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" download style="color: white;">Acessar Editavel</a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    <div class="projetos-cards">
-                        <div class="projetos-card">
-                            <img src="./assets/images/interface.png" alt="">
-                            <div class="projeto-card-desc">
-                                <div class="projeto-card-desc-esquerda">
-                                    <h2>Interface</h2>
-                                     
-                                </div>
-                                <div class="projeto-card-desc-direita">
-                                    <p>Usei a ferramenta Figma para para fazer a interface.</p>
-                                    <div class="projeto-card-desc-direita-icons">
-                                       
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        
-                        <div class="projetos-card">
-                            <img src="./assets/images/englishchat.png" alt="">
-                            <div class="projeto-card-desc">
-                                <div class="projeto-card-desc-esquerda">
-                                    <h2>EnglishChat</h2>
-                                    <div class="projeto-card-desc-categorias">
-                                        <div class="projeto-card-desc-categoria node">Nodejs</div>
-                                        <div class="projeto-card-desc-categoria express">Express</div>
-                                        <div class="projeto-card-desc-categoria typescript">Typescript</div>
-                                    </div>  
-                                </div>
-                                <div class="projeto-card-desc-direita">
-                                    <p> English chat é uma ótima plataforma para praticar inglês com falantes da língua e fazer novos amigos.                                   </p>
-                                    <div class="projeto-card-desc-direita-icons">
-                                        <a href="https://github.com/DavidAugustoo/EnglishChat" target="_blank"><i class="fab fa-github"></i></a>
-                                        <a href="https://englishchat.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="projetos-card">
-                            <img src="./assets/images/petfood.png" alt="">
-                            <div class="projeto-card-desc">
-                                <div class="projeto-card-desc-esquerda">
-                                    <h2>PetFood</h2>
-                                    <div class="projeto-card-desc-categorias">
-                                        <div class="projeto-card-desc-categoria html">HTML</div>
-                                        <div class="projeto-card-desc-categoria css">CSS</div>
-                                        <div class="projeto-card-desc-categoria javascript">JavaScript</div>
-                                    </div>  
-                                </div>
-                                <div class="projeto-card-desc-direita">
-                                    <p> PetFood é um e-commerce totalmente voltado para o ramo de animais de estimação.</p>
-                                    <div class="projeto-card-desc-direita-icons">
-                                        <a href="https://github.com/DavidAugustoo/PetFood" target="_blank"><i class="fab fa-github"></i></a>
-                                        <a href="https://petfoood.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="projetos-card">
-                            <img src="./assets/images/freeplay.png" alt="">
-                            <div class="projeto-card-desc">
-                                <div class="projeto-card-desc-esquerda">
-                                    <h2>Freeplay</h2>
-                                    <div class="projeto-card-desc-categorias">
-                                        <div class="projeto-card-desc-categoria html">HTML</div>
-                                        <div class="projeto-card-desc-categoria css">CSS</div>
-                                        <div class="projeto-card-desc-categoria javascript">JavaScript</div>
-                                    </div>  
-                                </div>
-                                <div class="projeto-card-desc-direita">
-                                    <p> FreePlay é um ótimo site para encontrar jogos novos, divertidos e gratuitos para jogar com seus amigos.</p>
-                                    <div class="projeto-card-desc-direita-icons">
-                                        <a href="https://github.com/DavidAugustoo/FreePlay" target="_blank"><i class="fab fa-github"></i></a>
-                                        <a href="https://freeplayy.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="projetos-card">
-                            <img src="./assets/images/medicenter.png" alt="">
-                            <div class="projeto-card-desc">
-                                <div class="projeto-card-desc-esquerda">
-                                    <h2>MediCenter</h2>
-                                    <div class="projeto-card-desc-categorias">
-                                        <div class="projeto-card-desc-categoria html">HTML</div>
-                                        <div class="projeto-card-desc-categoria css">CSS</div>
-                                    </div>
-                                </div>
-                                <div class="projeto-card-desc-direita">
-                                    <p>Landing page dedicado a instituições médicas e de saúde, clínicas e hospitais, médicos e todos os outros envolvidos em serviços de saúde.</p>
-                                    <div class="projeto-card-desc-direita-icons">
-                                        <a href="https://github.com/DavidAugustoo/MediCenter" target="_blank"><i class="fab fa-github"></i></a>
-                                        <a href="https://davidaugustoo.github.io/MediCenter/" target="_blank"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="projetos-card">
-                            <img src="./assets/images/awax.png" alt="">
-                            <div class="projeto-card-desc">
-                                <div class="projeto-card-desc-esquerda">
-                                    <h2>Awax</h2>
-                                    <div class="projeto-card-desc-categorias">
-                                        <div class="projeto-card-desc-categoria html">HTML</div>
-                                        <div class="projeto-card-desc-categoria css">CSS</div>
-                                    </div>
-                                </div>
-                                <div class="projeto-card-desc-direita">
-                                    <p>Landing page voltada para agências de comunicação visual, marketing e fotografia.</p>
-                                    <div class="projeto-card-desc-direita-icons">
-                                        <a href="https://github.com/DavidAugustoo/Awax" target="_blank"><i class="fab fa-github"></i></a>
-                                        <a href="https://davidaugustoo.github.io/Awax/" target="_blank"><i class="fas fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+          <div class="media service-box">
+            <div class="pull-left"> <i class="fa fa-bar-chart"></i> </div>
+            <div class="media-body">
+              <h5 class="media-heading">Suporte Técnico</h5>
+              <p>Resolução de problemas de softwares e manutenção preventiva e corretiva de computadores.  </p>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+          <div class="media service-box">
+            <div class="pull-left"> <i class="fa fa-language"></i> </div>
+            <div class="media-body">
+              <h5 class="media-heading">Android App</h5>
+              <p>Projecção de software para ser executado no sistemas operacional Android usando o ambiente de desenvolvimento Android Studio.</p>
+            </div>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+          <div class="media service-box">
+            <div class="pull-left"> <i class="fa fa-bullseye"></i> </div>
+            <div class="media-body">
+              <h5 class="media-heading">Instalação de Sistemas</h5>
+              <p>Configuração de sistemas operacionais, software e hardware em diversos dispositivos eletrónicos.</p>
+            </div>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+      </div>
+    </div>
+    <div class="experience">
+      <div class="col-sm-6 col-xs-12">
+        <div class="our-skills wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <p class="lead">Desenvolvimento de Sistemas</p>
+            <div class="progress">
+              <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50" style="width: 50%;"> 50% </div>
+            </div>
+          </div>
+          <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="400ms">
+            <p class="lead">HTML, CSS, PHP</p>
+            <div class="progress">
+              <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50" style="width: 50%;"> 50% </div>
+            </div>
+          </div>
+          <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+            <p class="lead">Sistemas Operativos </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="60" style="width: 60%;"> 60% </div>
+            </div>
+          </div>
+          <div class="single-skill wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <p class="lead">Design Web</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="60" style="width: 60%;"> 60% </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms"> <img src="images/Service/01.png" class="img-responsive" alt=""> </div>
+    </div>
+  </div>
+</section>
+
+<!--Portfolio-Section-Start-->
+<section id="portfolio">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2>MEUS PROJECT<span>OS</span></h2>
+        <div class="line"></div>
+        <p><span><strong>C</strong></span>onfira abaixo os meus trabalhos feitos na desciplina de Tecnologia Multimédia através de diversas ferramentas.</p>
+      </div>
+    </div>
+    <div class="text-center">
+      <ul class="portfolio-filter">
+        <li><a class="active" href="#" data-filter="*">All Works</a></li>
+        <li><a href="#" data-filter=".creative">Creative</a></li>
+        <li><a href="#" data-filter=".corporate">Corporate</a></li>
+        <li><a href="#" data-filter=".portfolio">Portfolio</a></li>
+      </ul>
+      <!--/#portfolio-filter-->
+    </div>
+    <div class="portfolio-items">
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item creative">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/01.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/01.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-1</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <!--/.portfolio-item-->
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate portfolio">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/02.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/02.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-2</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <!--/.portfolio-item-->
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item creative">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/03.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/03.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-3</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <!--/.portfolio-item-->
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/04.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/04.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-4</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <!--/.portfolio-item-->
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item creative portfolio">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/05.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/05.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-5</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <!--/.portfolio-item-->
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/06.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/06.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-6</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/07.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/07.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-6</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/08.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/08.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-6</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item corporate">
+        <div class="portfolio-item-inner"> <img class="img-responsive" src="images/Portfolio/09.jpg" alt="">
+          <div class="portfolio-info"> <a class="preview" href="images/Portfolio/09.jpg" data-rel="prettyPhoto"><i class="fa fa-plus-circle"></i></a>
+            <h6>ITEM-6</h6>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+      </div>
+      <!--/.portfolio-item-->
+    </div>
+  </div>
+</section>
+<!--Pricing-Section-Start-->
+<section id="pricing">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2>VIDE<span>OS</span></h2>
+          <div>
+            <br> <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d2gnGkncQbU" frameborder="0" allowfullscreen></iframe>
+             <br> <p>Usei a ferramenta OBS Studio pra gravar o video & CAPCUT para editar</p>
+        </div> 
+      </div>
+    </div>
+      
+  </div>
+</section>
+
+<!--Blog-Section-Start-->
+<section id="blog">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2>BL<span>OG</span></h2>
+        <div class="line"></div>
+        <p><span><strong>C</strong></span>onfira abaixo as minhas recentes potagens disponíveis no meu Blog.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-4 blog-sec">
+          <div class="blog-info"> <img src="images/Blog/1.jpg" class="img-responsive" alt="">
+            <div class="data-meta">
+              <h4>Nov</h4>
+              <strong>10</strong><br>
+              2023 </div>
+            <a href="#">
+            <h5>Sed ut perspiciatis unde omnis</h5>
+            </a>
+            <ul class="blog-icon">
+              <li><i class="fa fa-pencil"></i><a href="#">
+                <h6>Nov</h6>
+                </a></li>
+              <li class="comment"><i class="fa fa-comment"></i><a href="#">
+                <h6>13</h6>
+                </a></li>
+            </ul>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+            <a href="#" class="btn-blg">Read More</a> </div>
+        </div>
+        <div class="col-md-4 blog-sec">
+          <div class="blog-info"> <img src="images/Blog/2.jpg" class="img-responsive" alt="">
+            <div class="data-meta">
+              <h4>Jan</h4>
+              <strong>20</strong><br>
+              2016 </div>
+            <a href="#">
+            <h5>Sed ut perspiciatis unde omnis</h5>
+            </a>
+            <ul class="blog-icon">
+              <li><i class="fa fa-pencil"></i><a href="#">
+                <h6>Maria</h6>
+                </a></li>
+              <li class="comment"><i class="fa fa-comment"></i><a href="#">
+                <h6>04</h6>
+                </a></li>
+            </ul>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+            <a href="#" class="btn-blg">Read More</a> </div>
+        </div>
+        <div class="col-md-4 blog-sec">
+          <div class="blog-info"> <img src="images/Blog/3.jpg" class="img-responsive" alt="">
+            <div class="data-meta">
+              <h4>Jan</h4>
+              <strong>31</strong><br>
+              2016 </div>
+            <a href="#">
+            <h5>Sed ut perspiciatis unde omnis</h5>
+            </a>
+            <ul class="blog-icon">
+              <li><i class="fa fa-pencil"></i><a href="#">
+                <h6>Bear</h6>
+                </a></li>
+              <li class="comment"><i class="fa fa-comment"></i><a href="#">
+                <h6>05</h6>
+                </a></li>
+            </ul>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+            <a href="#" class="btn-blg">Read More</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Contact-Section-Start-->
+<section id="contact">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2>CONTACTE - <span>ME</span></h2>
+        <div class="line"></div>
+        <p><span><strong>P</strong></span>reencha o campo de massagem caso queira solicitar ou saber mais sobre o meu trabalho</p>
+      </div>
+    </div>
+    <div class="text-center">
+      <div class="col-md-6 col-sm-6 contact-sec-1">
+        <h4>CONTAC<span>TO</span></h4>
+        <ul class="contact-form">
+          <li><i class="fa fa-map-marker"></i>
+            <h6><strong>Endereço:</strong> Xai-Xai, Gaza, Moçambique </h6>
+          </li>
+          <li><i class="fa fa-envelope"></i>
+            <h6><strong>E-Mail:</strong> <a href="#">gersontembe@gmail.com</a></h6>
+          </li>
+          <li><i class="fa fa-phone"></i>
+            <h6><strong>Telefone:</strong> +258 873834135 </h6>
+          </li>
+          <li><i class="fa fa-wechat"></i>
+            <h6><strong>Website:</strong> <a href="#">www.gersontemb.github.io</a> </h6>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <form id="main-contact-form" name="contact-form" method="post" action="#">
+          <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Nome" required="required">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" class="form-control" placeholder="Título" required="required">
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Inserir a sua mensagem  " required="required"></textarea>
+          </div>
+          <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#">Enviar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="bg-sec">
+    <div class="container">
+      <h2>ANSIOSO  <strong>PARA OUVIR </strong>DE VOCÊ!</h2>
+    </div>
+  </div>
+</footer>
+<footer id="footer-down">
+  <h2>Siga-me nas redes sociais </h2>
+  <ul class="social-icon">
+    <li class="facebook hvr-pulse"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+    <li class="twitter hvr-pulse"><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li class="linkedin hvr-pulse"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    <li class="google-plus hvr-pulse"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+    <li class="youtube hvr-pulse"><a href="#"><i class="fa fa-youtube"></i></a></li>
+    <li class="instagram hvr-pulse"><a href="#"><i class="fa fa-instagram"></i></a></li>
+    <li class="behance hvr-pulse"><a href="#"><i class="fa fa-behance"></i></a></li>
+  </ul>
+  <p> &copy; Copyright 2023 Webfolio - Criado Por : <a href="http://templatestock.co" target="_blank">Gerson Tembe</a> </p>
+</footer>
+<!--Jquery-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--Boostrap-Jquery-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--Preetyphoto-Jquery-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--NiceScroll-Jquery-->
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<!--Isotopes-->
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<!--Wow-Jquery-->
+<script type="text/javascript" src="js/wow.js"></script>
+<!--Count-Jquey-->
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<!--Owl-Crousels-Jqury-->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<!--Main-Scripts-->
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
